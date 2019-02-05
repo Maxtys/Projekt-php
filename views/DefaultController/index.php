@@ -4,7 +4,7 @@
 <?php include(dirname(__DIR__).'/head.html'); ?>
 
 <body>
-<?php include(dirname(__DIR__).'/navbar.php'); ?>
+<?php include(dirname(__DIR__).'/navbar.html'); ?>
 
 
 <div class="container header">

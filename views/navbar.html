@@ -1,12 +1,46 @@
 <div class="absolute">
     <div class="container">
-        <div class="row">
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-6 nav-bar">
+                <?php
+                    if(isset($_SESSION['id']) == false)
+                    {
+                        echo '<form method="post" action="?page=?login" style="font-size: 14px;">
+                <p><a href="?page=index"><img src="/views/DefaultController/images/LOGO.jpg" /></a>
+                    Login: <input type="text" name="email" id="email">
+                    Hasło: <input type="password" name="password" id="password">
+                    <button type="submit" class="btn btn-primary">Zaloguj</button></p>
+                </form>';
+                }
+                else
+                {
+                echo '<a href="?page=index"><img src="/views/DefaultController/images/LOGO.jpg" /></a>';
+                echo '<p>'.$_SESSION['id'].'</p>';
+                }
+                ?>
+            </div>
+            <?php
+                if(isset($_SESSION['id']))
+                {
+                    echo '
+                        <div class="col-6" style="padding-left:10%;">
             <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><i class="material-icons md-48">cloud_upload</i><a href="?page=upload">Upload</a></li>
-            </ul>
+                <li><a class="active" href="?page=logout">Wyloguj</a></li>';
+                }
+                else
+                {
+                echo '
+                <div class="col-6" style="padding-left:10%;">
+                    <ul>
+                        <li><a class="active" href="?page=register">Zarejestruj</a></li>';
+
+                        }
+                        ?>
+
+                        <li><a class="active" href="?page=user">Moje konto</a></li>
+                        <li><a class="active" href="?page=myAdvert">Moje ogłoszenia</a></li>
+                    </ul>
+                </div>
         </div>
     </div>
 </div>

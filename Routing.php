@@ -53,6 +53,9 @@ class Routing
         $page = isset($_GET['page'])
             && isset($this->routes[$_GET['page']]) ? $_GET['page'] : 'login';
 
+        if(isset($_GET['page']) == false)
+            $page = 'index';
+
         if ($this->routes[$page]) {
             $class = $this->routes[$page]['controller'];
             $action = $this->routes[$page]['action'];

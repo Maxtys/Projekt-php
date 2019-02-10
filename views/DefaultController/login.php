@@ -2,6 +2,7 @@
 <html>
 
 <?php include(dirname(__DIR__).'/head.html') ?>
+<?php include(dirname(__DIR__).'/navbar.php') ?>
 
 <body>
 
@@ -33,7 +34,7 @@
                         <input type="password" name="password" class="form-control" id="inputPassword" placeholder="password" type="password" required/>
                     </div>
                 </div>
-                <input type="submit" value="Sign in" class="btn btn-primary btn-lg float-right" />
+                <input type="submit" value="Sign in" class="btn btn-info btn-lg float-right" />
             </form>
         </div>
     </div>

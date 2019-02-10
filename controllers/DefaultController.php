@@ -32,11 +32,11 @@ class DefaultController extends AppController
             $user = $mapper->getUser($_POST['email']);
 
             if(!$user) {
-                return $this->render('login', ['message' => ['Email not recognized']]);
+                return $this->render('login', ['message' => ['Nie odneleziono e-mail']]);
             }
 
             if ($user->getPassword() !== md5($_POST['password'])) {
-                return $this->render('login', ['message' => ['Wrong password']]);
+                return $this->render('login', ['message' => ['Zle haslo']]);
             } else {
                 $_SESSION["id"] = $user->getEmail();
                 $_SESSION["role"] = $user->getRole();

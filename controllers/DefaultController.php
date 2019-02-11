@@ -32,16 +32,16 @@ class DefaultController extends AppController
             $user = $mapper->getUser($_POST['email']);
 
             if(!$user) {
-                return $this->render('login', ['message' => ['Nie odneleziono e-mail']]);
+                return $this->render('login', ['message' => ['Email not recognized']]);
             }
 
             if ($user->getPassword() !== md5($_POST['password'])) {
-                return $this->render('login', ['message' => ['Zle haslo']]);
+                return $this->render('login', ['message' => ['Wrong password']]);
             } else {
                 $_SESSION["id"] = $user->getEmail();
                 $_SESSION["role"] = $user->getRole();
 
-                $url = "http://$_SERVER[HTTP_HOST]/";
+                $url = "http://$_SERVER[HTTP_HOST]/projektrepo/Projekt-php";
                 header("Location: {$url}?page=index");
                 exit();
             }

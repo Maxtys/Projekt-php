@@ -1,22 +1,33 @@
+<?php
+
+$role = $user->getRole();
+
+if($role != '2')
+{
+    echo "Brak uprawnień";
+    exit();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 
 <?php include(dirname(__DIR__).'/head.html'); ?>
 
-<body>
+<body onload="adminStart()">
 <div class="container">
     <div class="row">
-        <h1 class="col-12 pl-0">ADMIN PANEL</h1>
-
-        <h4 class="mt-4">Your data:</h4>
+        <h4 class="mt-4">Użytkownicy</h4>
         <table class="table table-hover">
             <thead>
             <tr>
-                <th>Name</th>
-                <th>Surname</th>
+                <th>Imie</th>
+                <th>Nazwisko</th>
                 <th>Email</th>
-                <th>Role</th>
-                <th>Action</th>
+                <th>Rola</th>
+                <th>Akcja</th>
             </tr>
             </thead>
             <tbody>
@@ -32,7 +43,25 @@
             </tbody>
         </table>
 
-        <button class="btn btn-dark btn-lg" type="button" onclick="getUsers()">Get all users</button>
+    </div>
+    <div class="row">
+        <h4 class="mt-4">Ogłoszenia</h4>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Dodający</th>
+                <th>Tytuł</th>
+                <th>Cena</th>
+                <th>Data</th>
+                <th>Akcja</th>
+            </tr>
+            </thead>
+
+            <tbody class="advert-list">
+            </tbody>
+        </table>
+
     </div>
 </div>
 

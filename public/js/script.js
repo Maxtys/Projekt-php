@@ -81,9 +81,6 @@ function getAdvertsAdmin() {
 
 
 
-
-
-
 function deleteUser(id) {
     if (!confirm('Chcesz usunąć tego użytkownika?')) {
         return;

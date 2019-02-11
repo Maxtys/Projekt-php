@@ -49,6 +49,11 @@ class Routing
                 'controller' => 'DefaultController',
                 'action' => 'register'
             ],
+            'user' => [
+                'controller' => 'UserController',
+                'action' => 'user'
+            ],
+
             'admin_delete_user' => [
                 'controller' => 'AdminController',
                 'action' => 'userDelete'

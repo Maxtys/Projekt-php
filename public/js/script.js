@@ -54,7 +54,6 @@ function deleteUser(id) {
 
 function adminStart()
 {
-    getAdvertsAdmin();
     getUsers();
 }
 

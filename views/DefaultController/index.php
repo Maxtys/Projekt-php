@@ -13,7 +13,7 @@
         </div>
         <div class="col-6 motto">
             <a href="?page=add_advert"><button onclick="" class="button-primary">Dodaj ogłoszenie</button></a>
-            <a href="?page=search&category=building"><button onclick="" class="button-primary">Przeglądaj oferty</button></a>
+            <a href="?page=search&category=building"><button onclick="" class="button-primary">Przeglądaj ogloszenia</button></a>
         </div>
         <div class="col-3">
         </div>

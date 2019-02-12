@@ -170,15 +170,7 @@ li a:hover {
     text-align: center;
     display: inline-block;
 }
-.adv
-{
-    max-width: 2000px !important;
-    margin-left: 0px !important;
-    padding-left: 0px !important;
-    width: 100%;
-    height: 592px;
-    background-image: url('/views/DefaultController/images/background.jpg');
-}
+
 table.dataTable thead .sorting:after,
 table.dataTable thead .sorting:before,
 table.dataTable thead .sorting_asc:after,
@@ -198,16 +190,8 @@ table.dataTable thead .sorting_desc_disabled:before {
     padding-left: 0px !important;
     width: 100%;
     height: 592px;
-    background-image: url('/views/DefaultController/images/user.jpg');
 }
-.motto
-{
-    margin-top: 300px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    border-radius: 20px;
-    background-color: rgba(146, 146, 146,0.5);
-}
+
 .main
 {
     background-color:#d4d4d4;
@@ -217,16 +201,7 @@ table.dataTable thead .sorting_desc_disabled:before {
     float: center;
 
 }
-.addadvert
-{
-    background-color:#d4d4d4;
-    margin-top: 24px;
-    padding-top: 24px;
-    min-height: 500px;
-    text-align: center;
-    float: center;
 
-}
 .icon:hover
 {
     background-color: rgba(80, 80, 80,0.2);

@@ -12,9 +12,9 @@
         <div class="col-3">
         </div>
         <div class="col-6 motto">
-            <h1>Znajdz odpowiednia osobe na odpowiednie miejsce.</h1>
+            <h1>Znajdz odpowiednia osobe lub rzecz.</h1>
             <a href="?page=add_advert"><button onclick="" class="button-primary">Dodaj ogłoszenie</button></a>
-            <h1>Szukasz zlecenia dla siebie?</h1>
+            <h1>Szukasz czegos dla siebie?</h1>
             <a href="?page=search&category=building"><button onclick="" class="button-primary">Przeglądaj oferty</button></a>
         </div>
         <div class="col-3">
@@ -28,11 +28,11 @@
         <div class="col-12" style="float:left;">
             <div class="icon">
                 <p>Budownictwo</p>
-                <a href="?page=search&category=building"><i class="fas fa-hammer" style="font-size: 30px;"></i></a>
+                <a href="?page=search&category=building"><i class="fas fa-building" style="font-size: 30px;"></i></a>
             </div>
             <div class="icon">
                 <p>Transport</p>
-                <a href="?page=search&category=transport"><i class="fas fa-truck-moving" style="font-size: 30px;"></i></a>
+                <a href="?page=search&category=transport"><i class="fas fa-car" style="font-size: 30px;"></i></a>
             </div>
             <div class="icon">
                 <p>Programowanie</p>
@@ -40,11 +40,11 @@
             </div>
             <div class="icon">
                 <p>Korepetycje</p>
-                <a href="?page=search&category=education"><i class="fas fa-user-graduate" style="font-size: 30px;"></i></a>
+                <a href="?page=search&category=education"><i class="fas fa-chalkboard" style="font-size: 30px;"></i></a>
             </div>
             <div class="icon">
                 <p>Muzyka</p>
-                <a href="?page=search&category=music"><i class="fas fa-guitar" style="font-size: 30px;"></i></a>
+                <a href="?page=search&category=music"><i class="fas fa-music" style="font-size: 30px;"></i></a>
             </div>
             <div class="icon">
                 <p>Pomoc domowa</p>
@@ -52,7 +52,7 @@
             </div>
             <div class="icon">
                 <p>Fotografia</p>
-                <a href="?page=search&category=photo"><i class="fas fa-camera-retro" style="font-size: 30px;"></i></a>
+                <a href="?page=search&category=photo"><i class="fas fa-camera" style="font-size: 30px;"></i></a>
             </div>
             <div class="icon">
                 <p>Prawo</p>
